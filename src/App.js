@@ -5,7 +5,7 @@ import NewTask from "./components/NewTask/NewTask";
 
 function App() {
   const [tasks, setTasks] = useState([]);
-
+  //Get from firebase
   const { isLoading, error, sendRequest: fetchTasks } = useHttpRequest();
 
   useEffect(() => {
